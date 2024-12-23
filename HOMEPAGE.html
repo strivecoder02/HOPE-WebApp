@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="icon" href="C:/Users/HP/Documents/MCA/Project/images to be used/finallogo2.png" type="image/x-icon">
+        <title>
+            HOPE
+        </title>
+        <link rel="stylesheet" href="Homepagstyle.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Akaya+Telivigala&family=Poppins:wght@100;300;400;600;700&family=Roboto:wght@300&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@6.4.2/css/fontawesome.min.css">
+
+<!-- ----------------------[below script tag will be used for chatbot purpose]--------------------------- -->
+
+<script src="script.js" defer></script>
+<script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+        <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+
+
+        
+    </head>
+    <body>
+        
+        <section class="depdep">
+
+            <video autoplay loop muted plays-inline class="back-video">
+                <source src="C:/Users/HP/Documents/MCA/Project/images to be used/bgnature1.mp4" type="video/mp4"> 
+                
+
+            </video>
+
+           <nav>
+            <img src= "C:/Users/HP/Documents/MCA/Project/images to be used/hopelogo.png" class="logo">
+            <id="navlinks">
+            <i class="fa fa-times" onclick="hidemenu()"></i>
+            <ul style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">
+              <li><a href="#">About us</a></li>
+              <li><a href="#">Appoinment Booking</a></li>
+              <li><a href="javascript:void(0);" id="helpLink">Emergency</a></li>
+              <button class="btnLogin-popup">Sign up</button>
+            </ul>
+            <i class="fa fa-bars" onclick="showmenu()"></i>
+           </nav>
+           <div class="content">
+            <h1><pre style="font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;">Hope is a word that keeps you alive,
+  Hope is a word that gives you strength,
+    With all the struggles and strive;
+    Hope is a word that gives us life,
+    Hope says hold on pain will end,
+        So, hold on my Friend,
+        And things will be fine!
+                    </pre></h1>
+            <a href="C:/Users/HP/Desktop/project/public/Visit_to_know_more.html">Visit to know more</a>
+           </div>
+        
+           <!-- -- Popup Box -- -->
+        <div id="popupBox" class="popup">
+            <p>Call our helpline: <strong>123-456-7890</strong></p>
+            <button onclick="closePopup()">Close</button>
+        </div>
+           
+           <div class="wrapper">
+            <span class="icon-close"><ion-icon name="close"></ion-icon></span>
+
+            <div class="form-box login">
+                <h2>Login</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email"required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="eye-off"></ion-icon></span>
+                        <input type="password"required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">Remember me</label>
+                        <a href="#">Forgot Password?</a>
+                    </div>
+                    <button type="submit" class="btn">
+                        Login
+                    </button>
+                    <div class="login-register">
+                        <p>Don't have an account? 
+                            <a href="#" class="register-link">Register</a>
+
+                            </p>
+                        </div>
+                    
+                    
+                </form>
+            </div>
+           
+<!-- ___________________________code for registration_______________________________ -->
+
+            <div class="form-box register">
+                <h2>Registration</h2>
+                <form action="#">
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="person"></ion-icon></span>
+                        <input type="text"required>
+                        <label>Username</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="mail"></ion-icon></span>
+                        <input type="email"required>
+                        <label>Email</label>
+                    </div>
+                    <div class="input-box">
+                        <span class="icon"><ion-icon name="eye-off"></ion-icon></span>
+                        <input type="password"required>
+                        <label>Password</label>
+                    </div>
+                    <div class="remember-forgot">
+                        <label><input type="checkbox">I agree to the terms & conditions</label>
+                        
+                    </div>
+                    <button type="submit" class="btn">
+                        Register
+                    </button>
+                    <div class="login-register">
+                        <p>Already have an account? 
+                            <a href="#" class="login-link">Login</a>
+
+                            </p>
+                        </div>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        
+
+
+
+           
+        </section>
+        <section>
+        <!-- ------------------------------------ -->
+        <!-- --------------------------Chatbot button---------------------------->
+        <button class="chatbot-toggler">
+            <span class="material-symbols-outlined"><img src= "C:/Users/HP/Documents/MCA/Project/images to be used/chatbot.png"></span>
+            <span class="material-symbols-outlined">✕</span>
+        </button>
+        <!-- ---------------------------end of chatbot code-------------------------- -->
+        <div class="chatbot">
+            <header>
+                <h2>
+                    Mrs Hope
+                </h2>
+                <span class="close-btn material-symbols-outlined">✕</span>
+
+            </header>
+            <ul class="chatbox">
+                <li class="chat incoming">
+                    <span class="material-symbols-outlined">🤖</span>
+                    <p>Hello there 👋<br>How can I help you?</p>
+                </li>
+            </ul>    
+                <div class="chat-input">
+                    <textarea placeholder="Enter a message..." required>
+                    </textarea>
+                    <pre><span id="send-btn" class="material-symbols-outlined">▶  </span></pre>
+                </div>
+        </div>
+        </section>
+
+        
+    </body>
+</html>
